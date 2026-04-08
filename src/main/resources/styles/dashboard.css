@@ -1,0 +1,94 @@
+/* Global Font and Colors */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #111111, #1f1f1f);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-alignment: BASELINE_LEFT;
+    -fx-padding: 15 0 15 30;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-graphic-text-gap: 15;
+    -fx-padding: 15 0 15 40; /* Slide effect */
+    -fx-border-color: transparent transparent transparent white;
+    -fx-border-width: 0 0 0 4;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+/* Dashboard Cards */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 5, 5);
+    -fx-padding: 20;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 15, 0, 5, 5);
+    -fx-translate-y: -2; /* Lift effect */
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+.card-value {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111111;
+}
+
+.card-icon-container {
+    -fx-background-radius: 50%;
+    -fx-background-color: #eeeeee;
+    -fx-alignment: center;
+}
+
+/* Header Styles */
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.time-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+    -fx-font-family: 'Consolas', monospace;
+}
+
+/* Logout Button */
+.logout-button {
+    -fx-background-color: rgba(0, 0, 0, 0.08);
+    -fx-text-fill: #000000;
+    -fx-background-radius: 5;
+    -fx-border-color: #000000;
+    -fx-border-radius: 5;
+    -fx-transition: all 0.3s;
+}
+
+.logout-button:hover {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+}
