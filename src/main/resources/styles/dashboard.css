@@ -80,7 +80,7 @@
 
 /* Logout Button */
 .logout-button {
-    -fx-background-color: rgba(231, 76, 60, 0.1);
+    -fx-background-color: rgba(0, 0, 0, 0.08);
     -fx-text-fill: #000000;
     -fx-background-radius: 5;
     -fx-border-color: #000000;
