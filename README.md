@@ -25,7 +25,7 @@ It manages customers, inventory, reservations, rentals, and branch operations wi
 ## 2️⃣ Database Setup
 
 1. Open **MySQL Workbench** or **Terminal**  
-2. Run this script:
+2. Run this script: 'src/main/resources/sql/database.sql'
 
 
 This will create the **gearrentpro** database and insert initial seed data.
@@ -41,7 +41,7 @@ This will create the **gearrentpro** database and insert initial seed data.
 
 ## 3️⃣ Database Connection
 
-Edit the following file:
+Edit the following file: 'src/main/java/lk/ijse/gearrentpro/util/DBConnection.java'
 
 
 Update your MySQL password:
