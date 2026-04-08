@@ -64,7 +64,6 @@
                         <Button mnemonicParsing="false" onAction="#btnLoginOnAction" prefWidth="380.0" style="-fx-background-color: linear-gradient(to right, #111111, #2a2a2a); -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 15; -fx-cursor: hand;" text="Sign In" />
                         
                         <VBox alignment="CENTER" spacing="5.0">
-                           <Label style="-fx-text-fill: #c9c9c9; -fx-font-size: 12px;" text="Default: admin / admin123" />
                            <Label alignment="CENTER" style="-fx-text-fill: #c9c9c9; -fx-font-size: 11px;" text="Version 1.0.0 | © 2026 GearRent Pro" />
                         </VBox>
                      </children>
