@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gearrentpro.controller.DashboardController">
+   <left>
+      <VBox prefHeight="768.0" prefWidth="260.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="260.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="35.0" styleClass="sidebar-title" text="GearRent Pro">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#3498db" layoutX="225.0" layoutY="50.0" radius="5.0" />
+               </children>
+            </Pane>
+            <VBox spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" onAction="#btnRentalsOnAction" prefHeight="55.0" prefWidth="260.0" styleClass="sidebar-button" text="Rentals" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" onAction="#btnReservationsOnAction" prefHeight="55.0" prefWidth="260.0" styleClass="sidebar-button" text="Reservations" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="65.0" onAction="#btnEquipmentOnAction" prefHeight="55.0" prefWidth="260.0" styleClass="sidebar-button" text="Equipment Inventory" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="120.0" onAction="#btnCustomersOnAction" prefHeight="55.0" prefWidth="260.0" styleClass="sidebar-button" text="Customer Management" />
+                  <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="175.0" onAction="#btnBranchesOnAction" prefHeight="55.0" prefWidth="260.0" styleClass="sidebar-button" text="Branch &amp; Users" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="80.0" prefWidth="260.0">
+               <children>
+                  <JFXButton layoutX="20.0" layoutY="20.0" onAction="#btnLogoutOnAction" prefHeight="40.0" prefWidth="220.0" styleClass="logout-button" text="Log Out" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox spacing="20.0" style="-fx-background-color: #f4f7f6;" BorderPane.alignment="CENTER">
+         <children>
+            <!-- Top Header -->
+            <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1106.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 5);" spacing="20.0">
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER_LEFT">
+                     <children>
+                        <Label fx:id="lblTitle" styleClass="header-label" text="Dashboard Overview" />
+                        <Label text="Welcome back, Admin" textFill="#95a5a6" />
+                     </children>
+                  </VBox>
+                  <Pane HBox.hgrow="ALWAYS" />
+                  <VBox alignment="CENTER_RIGHT">
+                     <children>
+                        <Label fx:id="lblTime" styleClass="time-label" text="10:45 AM" />
+                        <Label fx:id="lblDate" text="Oct 24, 2025" textFill="#95a5a6" />
+                     </children>
+                  </VBox>
+                  <Circle fill="#e74c3c" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            
+            <!-- Dashboard Content -->
+            <AnchorPane fx:id="contentPane" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox layoutX="30.0" layoutY="20.0" spacing="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                     <children>
+                        <!-- Card 1 -->
+                        <Pane prefHeight="150.0" prefWidth="250.0" styleClass="card">
+                           <children>
+                              <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Active Rentals" />
+                              <Label fx:id="lblActiveRentals" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="12" />
+                              <Label layoutX="20.0" layoutY="100.0" text="+2 today" textFill="#2ecc71" />
+                           </children>
+                        </Pane>
+                        <!-- Card 2 -->
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="250.0" styleClass="card">
+                           <children>
+                              <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Pending Returns" />
+                              <Label fx:id="lblPendingReturns" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="04" />
+                              <Label layoutX="20.0" layoutY="100.0" text="Due today" textFill="#e67e22" />
+                           </children>
+                        </Pane>
+                        <!-- Card 3 -->
+                        <Pane layoutX="280.0" layoutY="10.0" prefHeight="150.0" prefWidth="250.0" styleClass="card">
+                           <children>
+                              <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Available Equip." />
+                              <Label fx:id="lblAvailableItems" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="450" />
+                              <Label layoutX="20.0" layoutY="100.0" text="Ready to rent" textFill="#3498db" />
+                           </children>
+                        </Pane>
+                        <!-- Card 4 -->
+                        <Pane layoutX="550.0" layoutY="10.0" prefHeight="150.0" prefWidth="250.0" styleClass="card">
+                           <children>
+                              <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Total Revenue" />
+                              <Label layoutX="20.0" layoutY="50.0" styleClass="card-value" text="LKR 85k" />
+                              <Label layoutX="20.0" layoutY="100.0" text="This month" textFill="#2ecc71" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  
+                  <!-- Main Content Area Place holder or Charts -->
+                  <Label layoutX="30.0" layoutY="200.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Recent Activity" />
+                  <AnchorPane layoutX="30.0" layoutY="240.0" prefHeight="400.0" prefWidth="1046.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 0);" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="240.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
