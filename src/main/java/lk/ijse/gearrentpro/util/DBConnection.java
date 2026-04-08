@@ -11,7 +11,7 @@ public class DBConnection {
 
     private static final String URL = "jdbc:mysql://localhost:3306/gearrentpro";
     private static final String USER = "root";
-    private static final String PASSWORD = "11171586cdf1"; // Default as commonly used in training, can be changed
+    private static final String PASSWORD = ""; 
 
     private DBConnection() throws SQLException {
         try {
