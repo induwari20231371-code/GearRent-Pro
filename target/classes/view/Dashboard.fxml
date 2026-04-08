@@ -23,7 +23,7 @@
                         <Font size="26.0" />
                      </font>
                   </Label>
-                  <Circle fill="#3498db" layoutX="225.0" layoutY="50.0" radius="5.0" />
+                  <Circle fill="#1f1f1f" layoutX="225.0" layoutY="50.0" radius="5.0" />
                </children>
             </Pane>
             <VBox spacing="5.0" VBox.vgrow="ALWAYS">
@@ -47,7 +47,7 @@
       </VBox>
    </left>
    <center>
-      <VBox spacing="20.0" style="-fx-background-color: #f4f7f6;" BorderPane.alignment="CENTER">
+      <VBox spacing="20.0" style="-fx-background-color: #f5f5f5;" BorderPane.alignment="CENTER">
          <children>
             <!-- Top Header -->
             <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="1106.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 5);" spacing="20.0">
@@ -58,17 +58,17 @@
                   <VBox alignment="CENTER_LEFT">
                      <children>
                         <Label fx:id="lblTitle" styleClass="header-label" text="Dashboard Overview" />
-                        <Label text="Welcome back, Admin" textFill="#95a5a6" />
+                        <Label text="Welcome back, Admin" textFill="#6f6f6f" />
                      </children>
                   </VBox>
                   <Pane HBox.hgrow="ALWAYS" />
                   <VBox alignment="CENTER_RIGHT">
                      <children>
                         <Label fx:id="lblTime" styleClass="time-label" text="10:45 AM" />
-                        <Label fx:id="lblDate" text="Oct 24, 2025" textFill="#95a5a6" />
+                        <Label fx:id="lblDate" text="Oct 24, 2025" textFill="#6f6f6f" />
                      </children>
                   </VBox>
-                  <Circle fill="#e74c3c" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#000000" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
                </children>
             </HBox>
             
@@ -82,7 +82,7 @@
                            <children>
                               <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Active Rentals" />
                               <Label fx:id="lblActiveRentals" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="12" />
-                              <Label layoutX="20.0" layoutY="100.0" text="+2 today" textFill="#2ecc71" />
+                              <Label layoutX="20.0" layoutY="100.0" text="+2 today" textFill="#1a1a1a" />
                            </children>
                         </Pane>
                         <!-- Card 2 -->
@@ -90,7 +90,7 @@
                            <children>
                               <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Pending Returns" />
                               <Label fx:id="lblPendingReturns" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="04" />
-                              <Label layoutX="20.0" layoutY="100.0" text="Due today" textFill="#e67e22" />
+                              <Label layoutX="20.0" layoutY="100.0" text="Due today" textFill="#3a3a3a" />
                            </children>
                         </Pane>
                         <!-- Card 3 -->
@@ -98,7 +98,7 @@
                            <children>
                               <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Available Equip." />
                               <Label fx:id="lblAvailableItems" layoutX="20.0" layoutY="50.0" styleClass="card-value" text="450" />
-                              <Label layoutX="20.0" layoutY="100.0" text="Ready to rent" textFill="#3498db" />
+                              <Label layoutX="20.0" layoutY="100.0" text="Ready to rent" textFill="#1f1f1f" />
                            </children>
                         </Pane>
                         <!-- Card 4 -->
@@ -106,14 +106,14 @@
                            <children>
                               <Label layoutX="20.0" layoutY="20.0" styleClass="card-title" text="Total Revenue" />
                               <Label layoutX="20.0" layoutY="50.0" styleClass="card-value" text="LKR 85k" />
-                              <Label layoutX="20.0" layoutY="100.0" text="This month" textFill="#2ecc71" />
+                              <Label layoutX="20.0" layoutY="100.0" text="This month" textFill="#1a1a1a" />
                            </children>
                         </Pane>
                      </children>
                   </HBox>
                   
                   <!-- Main Content Area Place holder or Charts -->
-                  <Label layoutX="30.0" layoutY="200.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="Recent Activity" />
+                  <Label layoutX="30.0" layoutY="200.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #111111;" text="Recent Activity" />
                   <AnchorPane layoutX="30.0" layoutY="240.0" prefHeight="400.0" prefWidth="1046.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 0);" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="240.0" />
                </children>
             </AnchorPane>

@@ -22,59 +22,59 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
                <children>
-                  <Label text="New Reservation" textFill="#2c3e50">
+                  <Label text="New Reservation" textFill="#111111">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <VBox spacing="5.0">
                      <children>
-                        <Label text="Select Customer" textFill="#7f8c8d" />
-                        <ComboBox fx:id="cmbCustomer" prefWidth="310.0" promptText="Select Customer" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7; -fx-border-radius: 5;" />
+                        <Label text="Select Customer" textFill="#666666" />
+                        <ComboBox fx:id="cmbCustomer" prefWidth="310.0" promptText="Select Customer" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9; -fx-border-radius: 5;" />
                      </children>
                   </VBox>
                   <VBox spacing="5.0">
                      <children>
-                        <Label text="Select Equipment" textFill="#7f8c8d" />
-                        <ComboBox fx:id="cmbEquipment" prefWidth="310.0" promptText="Select Equipment" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7; -fx-border-radius: 5;" />
+                        <Label text="Select Equipment" textFill="#666666" />
+                        <ComboBox fx:id="cmbEquipment" prefWidth="310.0" promptText="Select Equipment" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9; -fx-border-radius: 5;" />
                      </children>
                   </VBox>
                   <HBox spacing="10.0">
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Start Date" textFill="#7f8c8d" />
+                              <Label text="Start Date" textFill="#666666" />
                               <DatePicker fx:id="dpStart" promptText="Start" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="End Date" textFill="#7f8c8d" />
+                              <Label text="End Date" textFill="#666666" />
                               <DatePicker fx:id="dpEnd" promptText="End" />
                            </children>
                         </VBox>
                      </children>
                   </HBox>
                   
-                  <Label text="Max duration: 30 days" textFill="#95a5a6">
+                  <Label text="Max duration: 30 days" textFill="#6f6f6f">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </Label>
                   
-                  <Button mnemonicParsing="false" onAction="#btnReserveOnAction" prefHeight="45.0" prefWidth="310.0" style="-fx-background-color: #f39c12; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 16px;" text="Create Reservation">
+                  <Button mnemonicParsing="false" onAction="#btnReserveOnAction" prefHeight="45.0" prefWidth="310.0" style="-fx-background-color: #3a3a3a; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand; -fx-font-size: 16px;" text="Create Reservation">
                      <VBox.margin>
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
                   
-                  <Button mnemonicParsing="false" onAction="#btnConvertToRentalOnAction" prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Convert to Rental">
+                  <Button mnemonicParsing="false" onAction="#btnConvertToRentalOnAction" prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: #1a1a1a; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Convert to Rental">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin>
                   </Button>
                   
-                  <Button mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="35.0" prefWidth="310.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-cursor: hand;" text="Cancel Reservation">
+                  <Button mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="35.0" prefWidth="310.0" style="-fx-background-color: #000000; -fx-text-fill: white; -fx-cursor: hand;" text="Cancel Reservation">
                      <VBox.margin>
                         <Insets top="5.0" />
                      </VBox.margin>
@@ -88,7 +88,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
                <children>
-                  <Label text="Active Reservations" textFill="#2c3e50">
+                  <Label text="Active Reservations" textFill="#111111">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>

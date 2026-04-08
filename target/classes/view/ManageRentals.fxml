@@ -24,7 +24,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
                <children>
-                  <Label text="New Rental Agreement" textFill="#2c3e50">
+                  <Label text="New Rental Agreement" textFill="#111111">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -32,34 +32,34 @@
                   
                   <!-- Rental ID (Auto-generated) -->
                   <VBox spacing="5.0">
-                     <Label text="Rental ID" textFill="#7f8c8d" />
-                     <TextField fx:id="txtRentalId" editable="false" prefWidth="360.0" style="-fx-background-color: #ecf0f1;" />
+                     <Label text="Rental ID" textFill="#666666" />
+                     <TextField fx:id="txtRentalId" editable="false" prefWidth="360.0" style="-fx-background-color: #eeeeee;" />
                   </VBox>
                   
                   <!-- Selections -->
                   <VBox spacing="5.0">
-                     <Label text="Customer (Membership applied auto)" textFill="#7f8c8d" />
+                     <Label text="Customer (Membership applied auto)" textFill="#666666" />
                      <ComboBox fx:id="cmbCustomer" prefWidth="360.0" promptText="Select Customer" styleClass="text-field" />
                   </VBox>
                   <VBox spacing="5.0">
-                     <Label text="Equipment" textFill="#7f8c8d" />
+                     <Label text="Equipment" textFill="#666666" />
                      <ComboBox fx:id="cmbEquipment" prefWidth="360.0" promptText="Select Equipment" styleClass="text-field" />
                   </VBox>
                   
                   <HBox spacing="10.0">
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
-                           <Label text="Start Date" textFill="#7f8c8d" />
+                           <Label text="Start Date" textFill="#666666" />
                            <DatePicker fx:id="dpStart" />
                         </VBox>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
-                           <Label text="End Date" textFill="#7f8c8d" />
+                           <Label text="End Date" textFill="#666666" />
                            <DatePicker fx:id="dpEnd" />
                         </VBox>
                      </children>
                   </HBox>
                   
-                  <Label text="Max duration: 30 days" textFill="#95a5a6">
+                  <Label text="Max duration: 30 days" textFill="#6f6f6f">
                      <font>
                         <Font size="11.0" />
                      </font>
@@ -73,30 +73,30 @@
                   </Separator>
                   
                   <!-- Breakdown -->
-                  <Label text="Cost Breakdown" textFill="#7f8c8d">
+                  <Label text="Cost Breakdown" textFill="#666666">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
                   
                   <HBox>
-                     <Label text="Base Rental (incl. weekends):" textFill="#34495e" />
+                     <Label text="Base Rental (incl. weekends):" textFill="#222222" />
                      <HBox HBox.hgrow="ALWAYS" />
-                     <Label fx:id="lblBase" text="LKR 0.00" textFill="#34495e" />
+                     <Label fx:id="lblBase" text="LKR 0.00" textFill="#222222" />
                   </HBox>
                   <HBox>
-                     <Label text="Security Deposit:" textFill="#e67e22" />
+                     <Label text="Security Deposit:" textFill="#3a3a3a" />
                      <HBox HBox.hgrow="ALWAYS" />
-                     <Label fx:id="lblDeposit" text="LKR 0.00" textFill="#e67e22" />
+                     <Label fx:id="lblDeposit" text="LKR 0.00" textFill="#3a3a3a" />
                   </HBox>
                   
                   <VBox spacing="2.0">
                      <HBox>
-                        <Label text="Discounts Applied:" textFill="#27ae60" />
+                        <Label text="Discounts Applied:" textFill="#1a1a1a" />
                         <HBox HBox.hgrow="ALWAYS" />
-                        <Label fx:id="lblDiscount" text="- LKR 0.00" textFill="#27ae60" />
+                        <Label fx:id="lblDiscount" text="- LKR 0.00" textFill="#1a1a1a" />
                      </HBox>
-                     <Label fx:id="lblDiscountDetail" text="(No discounts)" textFill="#95a5a6">
+                     <Label fx:id="lblDiscountDetail" text="(No discounts)" textFill="#6f6f6f">
                         <font>
                            <Font size="10.0" />
                         </font>
@@ -106,22 +106,22 @@
                      </Label>
                   </VBox>
 
-                  <HBox style="-fx-background-color: #ecf0f1; -fx-background-radius: 5; -fx-padding: 10;">
-                     <Label text="NET TOTAL:" textFill="#2c3e50">
+                  <HBox style="-fx-background-color: #eeeeee; -fx-background-radius: 5; -fx-padding: 10;">
+                     <Label text="NET TOTAL:" textFill="#111111">
                         <font>
                            <Font name="System Bold" size="14.0" />
                         </font>
                      </Label>
                      <HBox HBox.hgrow="ALWAYS" />
-                     <Label fx:id="lblTotal" text="LKR 0.00" textFill="#e74c3c">
+                     <Label fx:id="lblTotal" text="LKR 0.00" textFill="#000000">
                         <font>
                            <Font name="System Bold" size="18.0" />
                         </font>
                      </Label>
                   </HBox>
                   
-                  <Button mnemonicParsing="false" onAction="#btnCalculateOnAction" prefHeight="35.0" prefWidth="360.0" style="-fx-background-color: #3498db; -fx-text-fill: white;" text="Check Price &amp; Availability" />
-                  <Button mnemonicParsing="false" onAction="#btnPlaceRentalOnAction" prefHeight="45.0" prefWidth="360.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;" text="Process Rental Payment" />
+                  <Button mnemonicParsing="false" onAction="#btnCalculateOnAction" prefHeight="35.0" prefWidth="360.0" style="-fx-background-color: #1f1f1f; -fx-text-fill: white;" text="Check Price &amp; Availability" />
+                  <Button mnemonicParsing="false" onAction="#btnPlaceRentalOnAction" prefHeight="45.0" prefWidth="360.0" style="-fx-background-color: #1a1a1a; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px;" text="Process Rental Payment" />
                </children>
             </VBox>
             
@@ -132,7 +132,7 @@
                </padding>
                <children>
                   <HBox spacing="10.0">
-                     <Label text="Rental History" textFill="#2c3e50">
+                     <Label text="Rental History" textFill="#111111">
                         <font>
                            <Font name="System Bold" size="16.0" />
                         </font>

@@ -22,7 +22,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
                <children>
-                  <Label text="Equipment Details" textFill="#2c3e50">
+                  <Label text="Equipment Details" textFill="#111111">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -32,14 +32,14 @@
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Equipment ID" textFill="#7f8c8d" />
-                              <TextField fx:id="txtId" promptText="E001" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Equipment ID" textFill="#666666" />
+                              <TextField fx:id="txtId" promptText="E001" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Category" textFill="#7f8c8d" />
-                              <ComboBox fx:id="cmbCategory" prefWidth="150.0" promptText="Select" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Category" textFill="#666666" />
+                              <ComboBox fx:id="cmbCategory" prefWidth="150.0" promptText="Select" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                      </children>
@@ -47,8 +47,8 @@
 
                   <VBox spacing="5.0">
                      <children>
-                        <Label text="Name / Model" textFill="#7f8c8d" />
-                        <TextField fx:id="txtName" promptText="Item name" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                        <Label text="Name / Model" textFill="#666666" />
+                        <TextField fx:id="txtName" promptText="Item name" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                      </children>
                   </VBox>
 
@@ -56,14 +56,14 @@
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Brand" textFill="#7f8c8d" />
-                              <TextField fx:id="txtBrand" promptText="Brand" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Brand" textFill="#666666" />
+                              <TextField fx:id="txtBrand" promptText="Brand" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Year" textFill="#7f8c8d" />
-                              <TextField fx:id="txtYear" promptText="YYYY" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Year" textFill="#666666" />
+                              <TextField fx:id="txtYear" promptText="YYYY" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                      </children>
@@ -73,14 +73,14 @@
                      <children>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Daily Price (LKR)" textFill="#7f8c8d" />
-                              <TextField fx:id="txtDailyPrice" promptText="0.00" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Daily Price (LKR)" textFill="#666666" />
+                              <TextField fx:id="txtDailyPrice" promptText="0.00" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                         <VBox spacing="5.0" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Deposit (LKR)" textFill="#7f8c8d" />
-                              <TextField fx:id="txtDeposit" promptText="0.00" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                              <Label text="Deposit (LKR)" textFill="#666666" />
+                              <TextField fx:id="txtDeposit" promptText="0.00" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                            </children>
                         </VBox>
                      </children>
@@ -88,16 +88,16 @@
 
                   <VBox spacing="5.0">
                      <children>
-                        <Label text="Status" textFill="#7f8c8d" />
-                        <ComboBox fx:id="cmbStatus" prefWidth="350.0" promptText="Select Status" style="-fx-background-radius: 5; -fx-border-color: #bdc3c7;" />
+                        <Label text="Status" textFill="#666666" />
+                        <ComboBox fx:id="cmbStatus" prefWidth="350.0" promptText="Select Status" style="-fx-background-radius: 5; -fx-border-color: #c9c9c9;" />
                      </children>
                   </VBox>
 
                   <HBox spacing="10.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Save" />
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #f39c12; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Update" />
-                        <Button layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #1a1a1a; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Save" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #3a3a3a; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Update" />
+                        <Button layoutX="90.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #000000; -fx-text-fill: white; -fx-font-weight: bold; -fx-cursor: hand;" text="Delete" />
                      </children>
                      <VBox.margin>
                         <Insets top="20.0" />

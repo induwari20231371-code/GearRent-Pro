@@ -1,12 +1,12 @@
 /* Global Font and Colors */
 .root {
     -fx-font-family: 'Segoe UI', sans-serif;
-    -fx-background-color: #f4f7f6;
+    -fx-background-color: #f5f5f5;
 }
 
 /* Sidebar Styles */
 .sidebar {
-    -fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);
+    -fx-background-color: linear-gradient(to bottom, #111111, #1f1f1f);
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
 }
 
@@ -44,24 +44,24 @@
 }
 
 .card:hover {
-    -fx-effect: dropshadow(three-pass-box, rgba(52, 152, 219, 0.4), 15, 0, 5, 5);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 15, 0, 5, 5);
     -fx-translate-y: -2; /* Lift effect */
 }
 
 .card-title {
     -fx-font-size: 14px;
-    -fx-text-fill: #7f8c8d;
+    -fx-text-fill: #666666;
 }
 
 .card-value {
     -fx-font-size: 32px;
     -fx-font-weight: bold;
-    -fx-text-fill: #2c3e50;
+    -fx-text-fill: #111111;
 }
 
 .card-icon-container {
     -fx-background-radius: 50%;
-    -fx-background-color: #ecf0f1;
+    -fx-background-color: #eeeeee;
     -fx-alignment: center;
 }
 
@@ -69,26 +69,26 @@
 .header-label {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #34495e;
+    -fx-text-fill: #222222;
 }
 
 .time-label {
     -fx-font-size: 16px;
-    -fx-text-fill: #7f8c8d;
+    -fx-text-fill: #666666;
     -fx-font-family: 'Consolas', monospace;
 }
 
 /* Logout Button */
 .logout-button {
     -fx-background-color: rgba(231, 76, 60, 0.1);
-    -fx-text-fill: #e74c3c;
+    -fx-text-fill: #000000;
     -fx-background-radius: 5;
-    -fx-border-color: #e74c3c;
+    -fx-border-color: #000000;
     -fx-border-radius: 5;
     -fx-transition: all 0.3s;
 }
 
 .logout-button:hover {
-    -fx-background-color: #e74c3c;
+    -fx-background-color: #000000;
     -fx-text-fill: white;
 }
