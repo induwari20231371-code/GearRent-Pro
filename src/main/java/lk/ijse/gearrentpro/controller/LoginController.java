@@ -94,7 +94,11 @@ public class LoginController {
             }
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            showError("Database error: " + e.getMessage());
+            if (e instanceof SQLException sqlException) {
+                showError(buildDatabaseErrorMessage(sqlException));
+            } else {
+                showError("Database driver error: " + e.getMessage());
+            }
         } catch (java.io.IOException e) {
             e.printStackTrace();
             showError("Failed to load dashboard: " + e.getMessage());
@@ -121,5 +125,27 @@ public class LoginController {
             alert.setContentText(message);
             alert.showAndWait();
         }
+    }
+
+    private String buildDatabaseErrorMessage(SQLException e) {
+        String rawMessage = e.getMessage();
+        if (rawMessage == null) {
+            return "Database error. Please check MySQL server and database settings.";
+        }
+
+        String lower = rawMessage.toLowerCase();
+        if (lower.contains("communications link failure") || "08S01".equalsIgnoreCase(e.getSQLState())) {
+            return "Cannot connect to MySQL. Start MySQL service (MySQL80) and ensure database 'gearrentpro' exists on localhost:3306.";
+        }
+
+        if (lower.contains("access denied")) {
+            return "Database login failed. Verify DB username/password in DBConnection.java.";
+        }
+
+        if (lower.contains("unknown database")) {
+            return "Database 'gearrentpro' not found. Run src/main/resources/sql/database.sql first.";
+        }
+
+        return "Database error: " + rawMessage;
     }
 }
